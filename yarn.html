@@ -52,29 +52,47 @@
 
 </div>
 
+
+
 <div class="Commandes">
   <h1 class="Cmds">Les commandes :</h1>
-  <p class="Exp">yarn init : Permet d'initialiser un nouveau projet, c'est l'équivalent de npm init.
-  <p class="Exp">yarn add {nom du package} : permet d'installer un package dans notre projet. </p>
-  <p class="Exp">on reviendra sur le package.json plus tard</p>
-  <p class="Exp"> yarn add --> ajoute un package au projet dans le dossier et crée les dépendances</p>
-  <p class="Exp"> yarn upgrade --> Met à jour les listes de dépendances si on change de version
-    dans le package.json</p>
-  <p class="Exp">yarn global add --> Installe un package sur le système d'exploitation de manière général</p>
-  <p class="Exp">yarn remove --> Supprime une/des dépédance/s et leur/s références dans le package.json</p>
+  <p class="Exp">• yarn init : Permet d'initialiser un nouveau projet, c'est l'équivalent de npm init.</p>
+  <p class="Exp">• yarn -v : Donne la version de Yarn installée.</p>
+  <p class="Exp">• yarn add {nom du package} : permet d'installer un package dans notre projet (et dans le package.json) </p>
+  <p class="Exp">• yarn remove {nom du package} : permet de supprimer le package de notre projet (supprime aussi du package.json)</p>
+  <p class="Exp">• yarn why {nom du package} : explique pourquoi le package est installé et quels package utilisé ce package.</p>
+  <p class="Exp">• yarn upgrade {nom du package} : permet de mettre a jour les packages installés (À noter que le nom du package
+    est faculatif si il n'est pas mis Yarn mettra à jour tout les packages.)</p>
+    <p class="Exp">• yarn install : sert à installer tout les packages du fichier package.json (crée le Yarn.lock)</p>
 </div>
 
-  <h3> Vous allez maintenant installer yarn depuis NPM : "npm install yarn --global" dans la console</h3>
-  <h3> Verifiez aussi la version de yarn : "yarn --version"</h3>
+<div class ="fichier">
+<h2 class="Soustitre">Package.json et Yarn.lock</h2>
+  <p class="Exp">Si tout s'est passé comme prévu normalement vous devez avoir deux fichier. Le package.json
+    et un deuxième le Yarn.lock.</p>
+    <p class="Exp">
+      Le fichier Package.json
+    </p>
+  <p class="Exp">
+    Le fichier Yarn.lock est une liste qui contient toutes les dépendances que nous avons besoin pour notre projet.
+    Il sert à faire en sorte que tout les membres d'une équipe aient les mêmes versions des packages utilisés.
+    Cela permet d'éviter les bugs dû à des conflits de version.
+  </p>
 
+</div>
 
-
-  <h1>Qu'est-ce que le package.json ?</h1>
-    <p>Le package.json 
-      Yarn.lock est une liste qui contient toutes les dépendances que nous avons besoin pour notre projet.
-      Il sert à faire en sorte que tout les membres d'une équipe aient les mêmes versions des packages utilisés.
-      Cela permet d'éviter les bugs dû à des conflits de version.</p>
-
+<div class="exercice">
+<h2 class="Soustitre">Exercices : </h2>
+  <p class="Exp">1. Installez Yarn à l'aide d'NPM.</p>
+  <p class="Exp">2. Verifiez la version de Yarn que vous avez.</p>
+  <p class="Exp">3. Créez un nouveau dossier et initialiser un nouveau projet avec Yarn à l'interieur.</p>
+  <p class="Exp">4. Ajoutez le package "gulp".</p>
+  <p class="Exp">5. Ajoutez le package "express".</p>
+  <p class="Exp">6. Installez les deux packages.</p>
+  <p class="Exp">7. Demandez à Yarn pourquoi le package "gulp" est dans le projet.</p>
+  <p class="Exp">8. Effacez le package "express".</p>
+  <p class="Exp">9. Mettez à jour le package "gulp".</p>
+</div>
 
 
 
