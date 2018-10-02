@@ -4,5 +4,9 @@
   "description": "A Yarn Project",
   "main": "index.js",
   "repository": "https://github.com/ArjanNuggets/Yarn.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "expressio": "^0.21.3",
+    "gulp": "^3.9.1"
+  }
 }

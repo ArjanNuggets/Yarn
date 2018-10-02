@@ -21,12 +21,14 @@
 
 <div class="CquoiYarn">
   <h2 class="Soustitre">Qu'est-ce que Yarn</h2>
+
   <p class="Exp">Tout comme NPM, Yarn est un package manager pour JavaScript, c'est à dire qu'il sert
     à gérer toutes les codépendances des packages que nous utilisons. Il nous permet de prendre des bouts
     de code créer par d'autre personnes et de les utiliser sur notre site de manière très simple. De plus
     il permet de mettre à jour nos packages si les developpeurs sortent une nouvelle version de celui ci.
     Yarn a été créer entre autre par Facebook et Google pour des questions de sécurité et d'efficacité,
-    mais il n'est pas fait pour remplacer NPM car Yarn utilise la bibliothèque de NPM pour ses packages.</p>
+    mais il n'est pas fait pour remplacer NPM car Yarn utilise la bibliothèque de NPM pour ses packages mais aussi
+    celle de Bower (une autre bibliothèque).</p>
 </div>
 
 
@@ -35,16 +37,25 @@
 
   <p class="Exp"> Comme dit plus haut, Yarn et NPM ont le même rôle, donc pourquoi
     choisir Yarn plutôt que NPM ? Premièrement, Yarn est plus rapide et plus stable
-    que NPM car lorsque que Yarn télécharge un package, il télécharge plusieur partie du package
-    en même temps alors que NPM chaque partie les unes après les autres. De plus, il
-    est plus sécruisé que NPM. Mise à part cela, les deux sont de niveau équivalent.</p>
+    que NPM car lorsque que Yarn télécharge des packages, il télécharge plusieurs package
+    en même temps alors que NPM chaque package les uns après les autres. De plus, il
+    est plus sécruisé que NPM. Pour finir, lorsque NPM installe les packages, il affiche touts les détails de l'installation
+    ce qui rend l'affichage très peu comprehensible alors que Yarn a un affichage beaucoup plus propre.
+    Mise à part cela, les deux sont de niveau équivalent.</p>
 </div>
 
+<div class="instal">
+    <h2 class="Soustitre">Comment installer Yarn</h2>
+    <p class="Exp">Il y a plusieurs manière de le faire. Si on à déjà NPM sur l'ordinateur
+      on peut simplement faire "npm install --global yarn". Si on a pas NPM et qu'on est sur mac on fait "brew install yarn".
+      Sur windows, on télécharge l'installer et on le lance.
+
+</div>
 
 <div class="Commandes">
   <h1 class="Cmds">Les commandes :</h1>
   <p class="Exp">yarn init : Permet d'initialiser un nouveau projet, c'est l'équivalent de npm init.
-  <p class="Exp">yarn add {nom du package} : permet d'ajouter </p>
+  <p class="Exp">yarn add {nom du package} : permet d'installer un package dans notre projet. </p>
   <p class="Exp">on reviendra sur le package.json plus tard</p>
   <p class="Exp"> yarn add --> ajoute un package au projet dans le dossier et crée les dépendances</p>
   <p class="Exp"> yarn upgrade --> Met à jour les listes de dépendances si on change de version
@@ -61,7 +72,8 @@
   <h1>Qu'est-ce que le package.json ?</h1>
     <p>Le package.json est en quelques sortes le tableau éléctrique du site,
       soit l'endroit avec tout le cablage et les fusibles (dans ce cas, les différentes
-      versions des packages)</p>
+      versions des packages)
+      yarn.lock</p>
 
 
 
