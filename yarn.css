@@ -1,12 +1,40 @@
+
+.logo {
+  text-align: center;
+}
+div {
+  text-align: justify;
+  width: 60%;
+  margin: auto;
+
+}
+
 .titre{
-  font-size : 100px;
-  align-content: center;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  font-family: arial black;
+
 }
 
-h1 {
-  font-family:impact, sans-serif ;
+.Commandes {
+  padding-top: 10px;
+}
+.Cmds {
+  text-decoration: underline;
+  font-size: 40px;
 }
 
-body {
-  align-content : left;
+
+.Soustitre {
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.Exp{
+  font-size: 30px;
+}
+
+html {
+  background-color: F0E7BE;
 }

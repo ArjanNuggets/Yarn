@@ -5,48 +5,62 @@
   <link rel ="stylesheet" href="yarn.css" />
   <title> Yarn site </title>
 </head>
+
+
 <body>
-  <br>
-  <h1 class="titre"> YARN</h1>
-  <h1> Premier point </h1>
-  <h2>Qu'est-ce que Yarn</h2>
-  <p>Yarn est un webpack manager. C'est-à-dire qu'il installe et gère<br>
-    les webpack à la place du client</p>
+<header>
 
-    <br>
-    <br>
+<div class="titre">
+<h1> YARN</h1>
+</div>
 
-  <h1>Second point</h1>
-  <h2>Pourquoi Yarn plutôt que NPM</h2>
-  <p>Yarn a été développé par Facebook et Google. Il est plus rapide<br>
-    et stable que NPM mais surtout, une fois un package installer,<br>
-    il peut être utilisé en Offline. NPM installe les packages<br>
-    les uns après les autres (sequetially) la où Yarn les installe<br>
-    en parallèle (in aprallel)</p>
+<div class ="logo">
+  <a href="https://yarnpkg.com/en/" target="_blank"><img src="img/Yarn_logo.png"></a>
+</div>
+</header>
 
-    <br>
-    <br>
+<div class="CquoiYarn">
+  <h2 class="Soustitre">Qu'est-ce que Yarn</h2>
+  <p class="Exp">Tout comme NPM, Yarn est un package manager pour JavaScript, c'est à dire qu'il sert
+    à gérer toutes les codépendances des packages que nous utilisons. Il nous permet de prendre des bouts
+    de code créer par d'autre personnes et de les utiliser sur notre site de manière très simple. De plus
+    il permet de mettre à jour nos packages si les developpeurs sortent une nouvelle version de celui ci.
+    Yarn a été créer entre autre par Facebook et Google pour des questions de sécurité et d'efficacité,
+    mais il n'est pas fait pour remplacer NPM car Yarn utilise la bibliothèque de NPM pour ses packages.</p>
+</div>
 
-  <h1>commandes Yarn</h1>
-  <h2>Pour init un projet</h2>
-  <p>yarn (ou yarn install) --> installer les dépendances depuis le package.json</p><br>
-  <p>on reviendra sur le package.json plus tard</p>
-  <p> yarn add --> ajoute un package au projet dans le dossier et crée les dépendances</p>
-  <p> yarn upgrade --> Met à jour les listes de dépendances si on change de version <br>
+
+<div class ="YarnVsNpm">
+  <h2 class="Soustitre">Pourquoi Yarn plutôt que NPM</h2>
+
+  <p class="Exp"> Comme dit plus haut, Yarn et NPM ont le même rôle, donc pourquoi
+    choisir Yarn plutôt que NPM ? Premièrement, Yarn est plus rapide et plus stable
+    que NPM car lorsque que Yarn télécharge un package, il télécharge plusieur partie du package
+    en même temps alors que NPM chaque partie les unes après les autres. De plus, il
+    est plus sécruisé que NPM. Mise à part cela, les deux sont de niveau équivalent.</p>
+</div>
+
+
+<div class="Commandes">
+  <h1 class="Cmds">Les commandes :</h1>
+  <p class="Exp">yarn init : Permet d'initialiser un nouveau projet, c'est l'équivalent de npm init.
+  <p class="Exp">yarn add {nom du package} : permet d'ajouter </p>
+  <p class="Exp">on reviendra sur le package.json plus tard</p>
+  <p class="Exp"> yarn add --> ajoute un package au projet dans le dossier et crée les dépendances</p>
+  <p class="Exp"> yarn upgrade --> Met à jour les listes de dépendances si on change de version
     dans le package.json</p>
-  <p>yarn global add --> Installe un package sur le système d'exploitation de manière général</p>
-  <p>yarn remove --> Supprime une/des dépédance/s et leur/s références dans le package.json</p>
-    <br>
-    <br>
+  <p class="Exp">yarn global add --> Installe un package sur le système d'exploitation de manière général</p>
+  <p class="Exp">yarn remove --> Supprime une/des dépédance/s et leur/s références dans le package.json</p>
+</div>
 
   <h3> Vous allez maintenant installer yarn depuis NPM : "npm install yarn --global" dans la console</h3>
   <h3> Verifiez aussi la version de yarn : "yarn --version"</h3>
-    <br>
-    <br>
+
+
 
   <h1>Qu'est-ce que le package.json ?</h1>
-    <p>Le package.json est en quelques sortes le tableau éléctrique du site,<br>
-      soit l'endroit avec tout le cablage et les fusibles (dans ce cas, les différentes<br>
+    <p>Le package.json est en quelques sortes le tableau éléctrique du site,
+      soit l'endroit avec tout le cablage et les fusibles (dans ce cas, les différentes
       versions des packages)</p>
 
 
