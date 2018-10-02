@@ -71,12 +71,15 @@
   <p class="Exp">Si tout s'est passé comme prévu normalement vous devez avoir deux fichier. Le package.json
     et un deuxième le Yarn.lock.</p>
     <p class="Exp">
-      Le fichier Package.json
+      Le fichier Package.json est une liste de tout les packages que le projet à besoin pour foncitonner.
+      Vous pouvez indiquer plusieurs versions des packages. Il sert aussi à lister toutes les infos
+      de votre projet. Son nom, sa version etc...
     </p>
   <p class="Exp">
     Le fichier Yarn.lock est une liste qui contient toutes les dépendances que nous avons besoin pour notre projet.
     Il sert à faire en sorte que tout les membres d'une équipe aient les mêmes versions des packages utilisés.
-    Cela permet d'éviter les bugs dû à des conflits de version.
+    Cela permet d'éviter les bugs dû à des conflits de version. Lorsqu'on lance "yarn install", Yarn va chercher
+    dans ce fichier quelles versions des packages il doit installer.
   </p>
 
 </div>
